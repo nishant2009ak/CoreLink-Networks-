@@ -1,7 +1,14 @@
-/* ===============================
-   CoreLink Networks - Base JS
-   =============================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("CoreLink Networks site loaded");
+  sections.forEach(sec => {
+    sec.style.opacity = "0";
+    sec.style.transition = "opacity 0.6s ease";
+  });
+
+  setTimeout(() => {
+    sections.forEach(sec => {
+      sec.style.opacity = "1";
+    });
+  }, 200);
 });
