@@ -1,284 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CoreLink Networks | Enterprise Networking Solutions</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="CoreLink Networks delivers enterprise-grade networking, cloud infrastructure, and secure connectivity solutions.">
-<meta name="author" content="Nishant Raj">
-
-<style>
-:root{
-  --bg:#0f172a;
-  --dark:#020617;
-  --card:#020617;
-  --primary:#38bdf8;
-  --text:#e5e7eb;
-  --muted:#94a3b8;
-}
-
-.light{
-  --bg:#f8fafc;
-  --dark:#ffffff;
-  --card:#ffffff;
-  --text:#020617;
-  --muted:#475569;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont;
-}
-
-body{
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-  transition:0.3s;
-}
-
-/* HEADER */
-header{
-  background:var(--dark);
-  padding:16px 24px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-
-header h1{
-  color:var(--primary);
-  font-size:22px;
-}
-
-nav{
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  color:var(--text);
-  text-decoration:none;
-  font-weight:600;
-}
-
-.menu-btn{
-  display:none;
-  font-size:26px;
-  cursor:pointer;
-  color:var(--primary);
-}
-
-.toggle{
-  cursor:pointer;
-  font-size:18px;
-}
-
-/* HERO */
-.hero{
-  padding:90px 20px;
-  text-align:center;
-  animation:fade 1s ease;
-}
-
-.hero h2{
-  font-size:clamp(28px,5vw,46px);
-  color:var(--primary);
-  margin-bottom:16px;
-}
-
-.hero p{
-  max-width:720px;
-  margin:auto;
-  color:var(--muted);
-}
-
-/* SECTIONS */
-.section{
-  padding:70px 20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.section h3{
-  font-size:clamp(24px,4vw,34px);
-  margin-bottom:20px;
-  color:var(--primary);
-}
-
-/* SERVICES */
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-}
-
-.card{
-  background:var(--card);
-  padding:26px;
-  border-radius:14px;
-  border:1px solid #1e293b;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-/* FOUNDER */
-.founder{
-  display:grid;
-  gap:20px;
-}
-
-.founder span{
-  color:var(--primary);
-  font-weight:bold;
-}
-
-/* CONTACT */
-form{
-  max-width:500px;
-  display:grid;
-  gap:14px;
-}
-
-input,textarea{
-  padding:12px;
-  border-radius:6px;
-  border:none;
-}
-
-button{
-  background:var(--primary);
-  color:var(--dark);
-  font-weight:bold;
-  padding:12px;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-}
-
-footer{
-  background:var(--dark);
-  text-align:center;
-  padding:16px;
-  font-size:14px;
-  color:var(--muted);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  nav{
-    position:absolute;
-    top:64px;
-    right:0;
-    background:var(--dark);
-    flex-direction:column;
-    width:200px;
-    display:none;
-    padding:16px;
-  }
-  nav.active{display:flex;}
-  .menu-btn{display:block;}
-}
-
-@keyframes fade{
-  from{opacity:0;transform:translateY(20px)}
-  to{opacity:1;transform:none}
-}
-</style>
+  <meta charset="UTF-8">
+  <title>CoreLink Networks | Enterprise Networking Solutions</title>
 </head>
-
 <body>
 
-<header>
-  <h1>CoreLink Networks</h1>
-  <div style="display:flex;gap:12px;align-items:center">
-    <div class="toggle" onclick="toggleTheme()">🌓</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
-  </div>
-  <nav id="nav">
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#founder">Founder</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h2>Connecting Intelligence. Powering Networks.</h2>
-  <p>
-    Enterprise-grade networking, cloud infrastructure,
-    and secure connectivity solutions built for scale.
-  </p>
-</section>
-
-<section class="section" id="about">
-  <h3>About Us</h3>
-  <p>
-    CoreLink Networks designs scalable, secure,
-    and intelligent network architectures for modern enterprises.
-  </p>
-</section>
-
-<section class="section" id="services">
-  <h3>Our Services</h3>
-  <div class="services">
-    <div class="card">
-      <h4>Enterprise Networking</h4>
-      <p>High-speed LAN, WAN, and data center solutions.</p>
-    </div>
-    <div class="card">
-      <h4>Cloud Infrastructure</h4>
-      <p>Hybrid and cloud-native architectures.</p>
-    </div>
-    <div class="card">
-      <h4>Network Security</h4>
-      <p>Advanced protection and segmentation.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="founder">
-  <h3>Founder</h3>
-  <div class="founder">
+  <!-- HERO SECTION -->
+  <section>
+    <h1>Connecting Intelligence. Powering Networks.</h1>
     <p>
-      <span>Nishant Raj</span> founded CoreLink Networks with a vision to build
-      next-generation network infrastructure that is reliable,
-      secure, and future-ready.
+      We design and support reliable, secure, and scalable network
+      infrastructure for modern businesses.
     </p>
-  </div>
-</section>
+    <p>
+      <a href="contact.html">Get a Free Consultation</a>
+    </p>
+  </section>
 
-<section class="section" id="contact">
-  <h3>Contact Us</h3>
-  <form onsubmit="event.preventDefault();alert('Message sent (demo)')">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <hr>
 
-<footer>
-  © 2026 CoreLink Networks. All rights reserved.
-</footer>
+  <!-- WHAT WE DO -->
+  <section>
+    <h2>What We Do</h2>
+    <p>
+      CoreLink Networks helps organizations build strong IT foundations
+      through enterprise networking, cloud infrastructure, and network security.
+    </p>
+  </section>
 
-<script>
-function toggleMenu(){
-  document.getElementById("nav").classList.toggle("active");
-}
-function toggleTheme(){
-  document.body.classList.toggle("light");
-}
-</script>
+  <hr>
+
+  <!-- KEY SERVICES -->
+  <section>
+    <h2>Our Core Services</h2>
+
+    <h3>Enterprise Networking</h3>
+    <p>
+      Design and implementation of LAN, WAN, and structured network systems.
+    </p>
+    <p>
+      <a href="services/enterprise-networking.html">Learn more</a>
+    </p>
+
+    <h3>Cloud Infrastructure</h3>
+    <p>
+      Scalable hybrid and cloud-ready infrastructure planning.
+    </p>
+    <p>
+      <a href="services/cloud-infrastructure.html">Learn more</a>
+    </p>
+
+    <h3>Network Security</h3>
+    <p>
+      Secure network architectures designed to reduce risk and downtime.
+    </p>
+    <p>
+      <a href="services/network-security.html">Learn more</a>
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- WHY CORELINK -->
+  <section>
+    <h2>Why CoreLink Networks</h2>
+    <ul>
+      <li>Focus on clarity, not complexity</li>
+      <li>Scalable solutions built for long-term growth</li>
+      <li>Security-first mindset</li>
+      <li>Simple communication, honest execution</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- CTA -->
+  <section>
+    <h2>Let’s Build a Stronger Network</h2>
+    <p>
+      Tell us about your requirement and we’ll get back to you.
+    </p>
+    <p>
+      <a href="contact.html">Contact CoreLink Networks</a>
+    </p>
+  </section>
 
 </body>
 </html>
