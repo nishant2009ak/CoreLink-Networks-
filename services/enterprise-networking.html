@@ -1,147 +1,261 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enterprise Networking | CoreLink Networks</title>
-<link rel="stylesheet" href="../assets/css/main.css">
-<script src="../assets/js/main.js" defer></script>
-  <meta name="description" content="Enterprise networking solutions designed for performance, reliability, security, and long-term scalability.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Networking | CoreLink Networks</title>
+    <meta name="description" content="High-performance, resilient network architectures for campus, data center, and wide-area connectivity.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <style>
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .capability-card {
+            padding: var(--space-lg);
+            border-left: 4px solid var(--color-accent-700);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+        }
+        
+        .principle-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .principle-list li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-neutral-300);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        
+        .principle-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .principle-icon {
+            color: var(--color-accent-700);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= HERO ================= -->
-  <header>
-    <h1>Enterprise Networking</h1>
-    <p>
-      Structured, high-performance networking solutions built to support
-      critical business operations and long-term organizational growth.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= INTRODUCTION ================= -->
-  <section>
-    <h2>Overview</h2>
-    <p>
-      Enterprise networking is the foundation of every modern organization.
-      Applications, data access, security controls, and cloud connectivity
-      all depend on a reliable and well-designed network.
-    </p>
-    <p>
-      Poorly planned networks lead to downtime, slow performance,
-      security exposure, and operational inefficiencies.
-      CoreLink Networks focuses on building enterprise-grade networks
-      that are stable, scalable, and easy to manage.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= BUSINESS PROBLEMS ================= -->
-  <section>
-    <h2>Challenges Organizations Face</h2>
-    <ul>
-      <li>Frequent network outages and instability</li>
-      <li>Slow application and data performance</li>
-      <li>Unstructured network expansion over time</li>
-      <li>Lack of scalability for future growth</li>
-      <li>Security risks caused by flat or poorly segmented networks</li>
-      <li>Limited documentation and visibility</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= OUR SOLUTION ================= -->
-  <section>
-    <h2>Our Enterprise Networking Solutions</h2>
-    <p>
-      We design and implement enterprise networking solutions
-      that balance performance, security, and operational clarity.
-    </p>
-    <ul>
-      <li>Enterprise LAN and WAN architecture design</li>
-      <li>Structured cabling and physical topology planning</li>
-      <li>Core, distribution, and access layer design</li>
-      <li>Network segmentation and traffic optimization</li>
-      <li>High availability and redundancy planning</li>
-      <li>Vendor-neutral hardware guidance</li>
-      <li>Clear documentation and network diagrams</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= HOW WE WORK ================= -->
-  <section>
-    <h2>How We Work</h2>
-    <ol>
-      <li>
-        <strong>Assessment:</strong>
-        Understand business goals, applications, and current limitations.
-      </li>
-      <li>
-        <strong>Design:</strong>
-        Create a scalable and security-aware network architecture.
-      </li>
-      <li>
-        <strong>Implementation:</strong>
-        Deploy infrastructure with minimal operational disruption.
-      </li>
-      <li>
-        <strong>Validation:</strong>
-        Test performance, redundancy, and failover scenarios.
-      </li>
-      <li>
-        <strong>Documentation:</strong>
-        Deliver clear network diagrams and configuration records.
-      </li>
-    </ol>
-  </section>
-
-  <hr>
-
-  <!-- ================= WHY CORELINK ================= -->
-  <section>
-    <h2>Why CoreLink Networks</h2>
-    <ul>
-      <li>Enterprise-first design mindset</li>
-      <li>Security integrated into architecture</li>
-      <li>Scalable designs for long-term growth</li>
-      <li>Clear documentation and transparency</li>
-      <li>No unnecessary complexity or overengineering</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= IDEAL USE CASES ================= -->
-  <section>
-    <h2>Who This Service Is For</h2>
-    <ul>
-      <li>Growing organizations with increasing network demands</li>
-      <li>Businesses upgrading legacy network infrastructure</li>
-      <li>Educational institutions and enterprise environments</li>
-      <li>Organizations planning long-term digital expansion</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Design a Reliable Enterprise Network</h2>
-    <p>
-      If your organization depends on stable, secure, and scalable
-      connectivity, CoreLink Networks can help you design
-      an enterprise networking foundation you can trust.
-    </p>
-    <a href="../contact.html">Discuss Your Networking Requirements</a>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../founder.html" class="nav-link">Founder</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Enterprise Networking</h1>
+                    <p class="lead">Design and implementation of high-performance, resilient network architectures that form the foundational connectivity layer for modern digital business.</p>
+                    <div class="hero-cta">
+                        <a href="../contact.html" class="btn btn-primary">Discuss Your Requirements</a>
+                        <a href="../services.html" class="btn btn-secondary">All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <h2>Strategic Context</h2>
+                        <p>Network infrastructure is no longer just about connectivity—it's the circulatory system of digital business. Modern applications, cloud services, and distributed workforces demand networks that are not only fast and reliable but also intelligent, automated, and secure by design.</p>
+                        <p>Legacy hierarchical network designs struggle with cloud-era requirements for east-west traffic, dynamic scaling, and consistent policy enforcement across hybrid environments.</p>
+                    </div>
+                    <div>
+                        <h2>Core Principles</h2>
+                        <ul class="principle-list">
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Intent-Based:</strong> Networks should be configured based on business intent, not individual device commands. Policy drives configuration.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Software-Defined:</strong> Control plane abstraction enables centralized management, automation, and consistent policy application.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Observability-First:</strong> Comprehensive telemetry collection and analysis is built in, not bolted on. You cannot manage what you cannot measure.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Resilient by Design:</strong> Redundancy, fast convergence, and self-healing capabilities are architectural requirements, not afterthoughts.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section style="background-color: var(--color-primary-100);">
+            <div class="container">
+                <h2 class="text-center mb-xl">Capabilities & Solution Areas</h2>
+                
+                <div class="capability-grid">
+                    <div class="capability-card">
+                        <h3>Access & Campus</h3>
+                        <p>High-density secure Wi-Fi, wired access, IoT device segmentation, and location-based services for corporate campuses, branch offices, and remote sites.</p>
+                        <ul class="text-small">
+                            <li>Identity-driven network access control</li>
+                            <li>Unified wired/wireless policy enforcement</li>
+                            <li>IoT isolation and management</li>
+                            <li>High-density venue design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>WAN & Edge</h3>
+                        <p>Software-Defined WAN (SD-WAN), secure access service edge (SASE), global backbone integration, and last-mile optimization for distributed enterprises.</p>
+                        <ul class="text-small">
+                            <li>Application-aware routing and QoS</li>
+                            <li>Cloud gateway optimization</li>
+                            <li>Zero-trust network access integration</li>
+                            <li>Carrier-agnostic design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Data Center Fabric</h3>
+                        <p>Spine-leaf architectures, network automation, micro-segmentation, and high-speed interconnects for on-premises and colocation facilities.</p>
+                        <ul class="text-small">
+                            <li>EVPN/VXLAN overlay networks</li>
+                            <li>Infrastructure as Code (IaC) deployment</li>
+                            <li>East-west traffic optimization</li>
+                            <li>Network function virtualization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Performance Intelligence</h3>
+                        <p>Full-stack observability, proactive baselining, capacity planning, and AIOps-driven insights for predictive management and troubleshooting.</p>
+                        <ul class="text-small">
+                            <li>Flow analysis and telemetry aggregation</li>
+                            <li>Application performance monitoring</li>
+                            <li>Anomaly detection and alerting</li>
+                            <li>Capacity forecasting and planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Approach</h2>
+                    <p class="lead mb-xl">We follow a disciplined methodology tailored to enterprise networking's unique requirements.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <h3>Discovery & Analysis</h3>
+                        <p>Comprehensive assessment of current topology, traffic patterns, performance baselines, and business requirements.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Architecture Design</h3>
+                        <p>Development of target state design with detailed implementation phasing, migration strategy, and risk mitigation.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Implementation</h3>
+                        <p>Phased deployment with change control, validation testing, and thorough documentation at each stage.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Operational Handoff</h3>
+                        <p>Knowledge transfer, runbook development, and integration with existing management tools and processes.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <a href="../contact.html" class="btn btn-primary">Begin a Technical Discussion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="enterprise-networking.html" class="active">Enterprise Networking</a></li>
+                        <li><a href="cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a href="network-security.html">Network Security</a></li>
+                        <li><a href="managed-services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../founder.html">Founder</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
