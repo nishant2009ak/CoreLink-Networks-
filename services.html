@@ -1,165 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | CoreLink Networks</title>
-<link rel="stylesheet" href="assets/css/main.css">
-<script src="assets/js/main.js" defer></script>
-  <meta name="description" content="Explore CoreLink Networks enterprise services including networking, cloud infrastructure, network security, and managed services.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | CoreLink Networks</title>
+    <meta name="description" content="Integrated enterprise infrastructure services across networking, cloud, security, and managed operations.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <style>
+        /* Service matrix specific styles */
+        .service-matrix {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        @media (max-width: 768px) {
+            .service-matrix {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .matrix-item {
+            padding: var(--space-lg);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: var(--border-radius-lg);
+            background-color: var(--color-neutral-0);
+            transition: all var(--transition-normal);
+        }
+        
+        .matrix-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent-500);
+        }
+        
+        .matrix-item h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .matrix-icon {
+            font-size: 1.5rem;
+        }
+        
+        .matrix-connection {
+            color: var(--color-accent-700);
+            font-weight: var(--fw-medium);
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= PAGE HERO ================= -->
-  <header>
-    <h1>Our Services</h1>
-    <p>
-      CoreLink Networks provides enterprise-focused IT and network services
-      designed to deliver performance, reliability, and long-term scalability.
-    </p>
-    <p>
-      Our services are structured, security-aware, and aligned with real
-      business requirements — not short-term fixes.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= SERVICES INTRO ================= -->
-  <section>
-    <h2>Enterprise Infrastructure Services</h2>
-    <p>
-      Modern organizations rely heavily on stable and secure IT infrastructure.
-      Weak or poorly designed systems can lead to downtime, security risks,
-      and operational inefficiencies that directly impact business outcomes.
-    </p>
-    <p>
-      At CoreLink Networks, we focus on building infrastructure that supports
-      growth, reduces complexity, and remains manageable over time.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= SERVICE: ENTERPRISE NETWORKING ================= -->
-  <section>
-    <h2>Enterprise Networking</h2>
-    <p>
-      A strong network is the backbone of every digital operation. Enterprise
-      networking requires careful planning, scalability, and security at
-      every layer of the architecture.
-    </p>
-    <p>
-      We design and implement LAN and WAN infrastructures that deliver high
-      performance, reliability, and future readiness.
-    </p>
-    <ul>
-      <li>Enterprise LAN and WAN architecture design</li>
-      <li>Structured cabling and topology planning</li>
-      <li>Network segmentation and traffic optimization</li>
-      <li>Hardware planning and vendor-neutral guidance</li>
-    </ul>
-    <a href="services/enterprise-networking.html">View Enterprise Networking Details</a>
-  </section>
-
-  <hr>
-
-  <!-- ================= SERVICE: CLOUD INFRASTRUCTURE ================= -->
-  <section>
-    <h2>Cloud Infrastructure</h2>
-    <p>
-      Cloud infrastructure offers flexibility and scalability, but without
-      proper planning it can introduce cost, security, and performance challenges.
-    </p>
-    <p>
-      We help organizations design cloud and hybrid environments that balance
-      control, performance, and long-term cost efficiency.
-    </p>
-    <ul>
-      <li>Cloud readiness assessment and migration planning</li>
-      <li>Hybrid and cloud-native infrastructure design</li>
-      <li>Network integration and connectivity planning</li>
-      <li>Cost optimization and performance tuning</li>
-    </ul>
-    <a href="services/cloud-infrastructure.html">View Cloud Infrastructure Details</a>
-  </section>
-
-  <hr>
-
-  <!-- ================= SERVICE: NETWORK SECURITY ================= -->
-  <section>
-    <h2>Network Security</h2>
-    <p>
-      Security is a critical requirement for modern IT environments.
-      Threats, misconfigurations, and lack of visibility can expose
-      organizations to serious risks.
-    </p>
-    <p>
-      Our network security services integrate protection directly into
-      the network design to reduce risk and improve visibility.
-    </p>
-    <ul>
-      <li>Security-focused network architecture</li>
-      <li>Firewall planning and access control</li>
-      <li>Network segmentation and isolation</li>
-      <li>Traffic monitoring and security visibility</li>
-    </ul>
-    <a href="services/network-security.html">View Network Security Details</a>
-  </section>
-
-  <hr>
-
-  <!-- ================= SERVICE: MANAGED SERVICES ================= -->
-  <section>
-    <h2>Managed Services</h2>
-    <p>
-      Infrastructure requires continuous attention to remain stable,
-      secure, and efficient. Many organizations lack the internal
-      resources to manage systems effectively.
-    </p>
-    <p>
-      Our managed services provide ongoing monitoring, optimization,
-      and guidance to ensure infrastructure reliability over time.
-    </p>
-    <ul>
-      <li>Infrastructure health monitoring</li>
-      <li>Performance optimization and issue prevention</li>
-      <li>Configuration review and guidance</li>
-      <li>Documentation and operational support</li>
-    </ul>
-    <a href="services/managed-services.html">View Managed Services Details</a>
-  </section>
-
-  <hr>
-
-  <!-- ================= WHY OUR SERVICES ================= -->
-  <section>
-    <h2>Why Choose CoreLink Networks</h2>
-    <p>
-      We believe enterprise services should be practical, transparent,
-      and aligned with real business needs.
-    </p>
-    <ul>
-      <li>Enterprise-first service mindset</li>
-      <li>Security integrated at every layer</li>
-      <li>Scalable and future-ready designs</li>
-      <li>Vendor-neutral recommendations</li>
-      <li>Clear communication and documentation</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Discuss Your Requirements</h2>
-    <p>
-      If you are planning to build, upgrade, or optimize your IT
-      infrastructure, our team can help you move forward with clarity.
-    </p>
-    <a href="contact.html">Contact CoreLink Networks</a>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="founder.html" class="nav-link">Founder</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Integrated Infrastructure Services</h1>
+                    <p class="lead">Our services are designed as interconnected practice areas, not isolated offerings. This integrated approach ensures architectural consistency and operational efficiency.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="text-center mb-xl">
+                    <h2>Service Philosophy</h2>
+                    <p class="lead">Enterprise infrastructure should function as a single adaptive system. Our services intersect to create cohesive outcomes.</p>
+                </div>
+                
+                <div class="service-matrix">
+                    <!-- Row 1, Col 1 -->
+                    <div class="matrix-item">
+                        <h3><span class="matrix-icon">⎇</span> Enterprise Networking</h3>
+                        <p>The foundation of all connectivity—campus, data center, and wide-area networks designed for performance and resilience.</p>
+                        <div class="mt-sm">
+                            <span class="matrix-connection">+ Security →</span>
+                            <span class="text-meta">Secure Access Architecture</span>
+                        </div>
+                        <div class="mt-xs">
+                            <span class="matrix-connection">+ Cloud →</span>
+                            <span class="text-meta">Cloud Connectivity</span>
+                        </div>
+                        <a href="services/enterprise-networking.html" class="btn btn-sm btn-secondary mt-md">Explore</a>
+                    </div>
+                    
+                    <!-- Row 1, Col 2 -->
+                    <div class="matrix-item">
+                        <h3><span class="matrix-icon">🔒</span> Network Security</h3>
+                        <p>Intrinsic security design across all layers—identity, network segmentation, threat protection, and compliance.</p>
+                        <div class="mt-sm">
+                            <span class="matrix-connection">+ Networking →</span>
+                            <span class="text-meta">Zero Trust Network Access</span>
+                        </div>
+                        <div class="mt-xs">
+                            <span class="matrix-connection">+ Cloud →</span>
+                            <span class="text-meta">Cloud Security Posture</span>
+                        </div>
+                        <a href="services/network-security.html" class="btn btn-sm btn-secondary mt-md">Explore</a>
+                    </div>
+                    
+                    <!-- Row 2, Col 1 -->
+                    <div class="matrix-item">
+                        <h3><span class="matrix-icon">☁️</span> Cloud Infrastructure</h3>
+                        <p>Structured cloud adoption, migration, and optimization with governance, cost control, and operational excellence.</p>
+                        <div class="mt-sm">
+                            <span class="matrix-connection">+ Managed Services →</span>
+                            <span class="text-meta">Cloud Operations</span>
+                        </div>
+                        <div class="mt-xs">
+                            <span class="matrix-connection">+ Networking →</span>
+                            <span class="text-meta">Hybrid Cloud Networking</span>
+                        </div>
+                        <a href="services/cloud-infrastructure.html" class="btn btn-sm btn-secondary mt-md">Explore</a>
+                    </div>
+                    
+                    <!-- Row 2, Col 2 -->
+                    <div class="matrix-item">
+                        <h3><span class="matrix-icon">⚙️</span> Managed Services</h3>
+                        <p>Proactive monitoring, management, and optimization of your infrastructure with clear visibility and predictable operations.</p>
+                        <div class="mt-sm">
+                            <span class="matrix-connection">+ Security →</span>
+                            <span class="text-meta">Managed Detection & Response</span>
+                        </div>
+                        <div class="mt-xs">
+                            <span class="matrix-connection">+ All Services →</span>
+                            <span class="text-meta">Full Lifecycle Management</span>
+                        </div>
+                        <a href="services/managed-services.html" class="btn btn-sm btn-secondary mt-md">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <h3>Our Engagement Model</h3>
+                    <p>We follow a consistent lifecycle for all engagements, ensuring thorough design and reliable implementation.</p>
+                    
+                    <div class="grid grid-4 mt-lg">
+                        <div class="text-center">
+                            <div class="card-icon">1</div>
+                            <h4>Assess</h4>
+                            <p class="text-small">Current state analysis and requirements definition.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">2</div>
+                            <h4>Architect</h4>
+                            <p class="text-small">Solution design aligned with principles and constraints.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">3</div>
+                            <h4>Implement</h4>
+                            <p class="text-small">Phased deployment with documentation and training.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">4</div>
+                            <h4>Optimize</h4>
+                            <p class="text-small">Continuous improvement and operational refinement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services/enterprise-networking.html">Enterprise Networking</a></li>
+                        <li><a href="services/cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a href="services/network-security.html">Network Security</a></li>
+                        <li><a href="services/managed-services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
