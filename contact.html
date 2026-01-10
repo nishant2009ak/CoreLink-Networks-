@@ -57,6 +57,10 @@
         .form-group-checkbox label {
             font-size: var(--fs-small);
         }
+        
+        #form-status {
+            transition: all var(--transition-normal);
+        }
     </style>
 </head>
 <body>
@@ -100,7 +104,12 @@
                         <h2>Send a Message</h2>
                         <p>Please provide details about your requirements so we can route your inquiry appropriately.</p>
                         
-                        <form id="contact-form" class="mt-lg">
+                        <form action="https://formspree.io/f/xnjjagdq" method="POST" id="contact-form" class="mt-lg">
+                            <!-- Hidden fields for Formspree -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - CoreLink Networks">
+                            <input type="hidden" name="_replyto" value="%email%">
+                            <input type="text" name="_gotcha" style="display:none">
+                            
                             <div class="form-group">
                                 <label for="name" class="form-label">Full Name *</label>
                                 <input type="text" id="name" name="name" class="form-control" required>
@@ -125,12 +134,12 @@
                                 <label for="service" class="form-label">Primary Interest</label>
                                 <select id="service" name="service" class="form-control">
                                     <option value="">Select a service area</option>
-                                    <option value="networking">Enterprise Networking</option>
-                                    <option value="cloud">Cloud Infrastructure</option>
-                                    <option value="security">Network Security</option>
-                                    <option value="managed">Managed Services</option>
-                                    <option value="multiple">Multiple Services</option>
-                                    <option value="other">Other/General Inquiry</option>
+                                    <option value="Enterprise Networking">Enterprise Networking</option>
+                                    <option value="Cloud Infrastructure">Cloud Infrastructure</option>
+                                    <option value="Network Security">Network Security</option>
+                                    <option value="Managed Services">Managed Services</option>
+                                    <option value="Multiple Services">Multiple Services</option>
+                                    <option value="Other/General Inquiry">Other/General Inquiry</option>
                                 </select>
                             </div>
                             
@@ -147,6 +156,9 @@
                             </div>
                             
                             <button type="submit" class="btn btn-primary">Send Message</button>
+                            
+                            <!-- Success/Error Message Display -->
+                            <div id="form-status" style="display: none; margin-top: var(--space-md); padding: var(--space-sm); border-radius: var(--border-radius);"></div>
                         </form>
                     </div>
                     
