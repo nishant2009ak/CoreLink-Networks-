@@ -1,143 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Managed Services | CoreLink Networks</title>
-<link rel="stylesheet" href="../assets/css/main.css">
-<script src="../assets/js/main.js" defer></script>
-  <meta name="description" content="Managed IT and network services designed to ensure stability, performance, and long-term reliability of enterprise infrastructure.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Services | CoreLink Networks</title>
+    <meta name="description" content="Proactive infrastructure management, monitoring, and optimization with clear operational visibility.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <style>
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .capability-card {
+            padding: var(--space-lg);
+            border-left: 4px solid var(--color-accent-700);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+        }
+        
+        .principle-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .principle-list li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-neutral-300);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        
+        .principle-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .principle-icon {
+            color: var(--color-accent-700);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .service-levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        
+        .service-level {
+            text-align: center;
+            padding: var(--space-lg);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-neutral-300);
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= HERO ================= -->
-  <header>
-    <h1>Managed Services</h1>
-    <p>
-      Proactive infrastructure management designed to keep your
-      systems stable, secure, and performing at their best.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= OVERVIEW ================= -->
-  <section>
-    <h2>Service Overview</h2>
-    <p>
-      Building infrastructure is only the first step. Without continuous
-      monitoring, maintenance, and optimization, even well-designed systems
-      can degrade over time and create operational risk.
-    </p>
-    <p>
-      CoreLink Networks provides managed services that focus on stability,
-      visibility, and long-term reliability. We help organizations maintain
-      control over their infrastructure while reducing operational burden.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= COMMON CHALLENGES ================= -->
-  <section>
-    <h2>Common Operational Challenges</h2>
-    <ul>
-      <li>Frequent infrastructure issues and unplanned downtime</li>
-      <li>Lack of visibility into system performance and health</li>
-      <li>Reactive troubleshooting instead of proactive prevention</li>
-      <li>Limited internal IT resources</li>
-      <li>Outdated configurations and undocumented systems</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= OUR MANAGED SERVICES ================= -->
-  <section>
-    <h2>Our Managed Services Capabilities</h2>
-    <p>
-      Our managed services are designed to support critical infrastructure
-      environments with a structured and transparent approach.
-    </p>
-    <ul>
-      <li>Infrastructure health monitoring</li>
-      <li>Performance and capacity monitoring</li>
-      <li>Configuration review and optimization guidance</li>
-      <li>Issue detection and root cause analysis</li>
-      <li>Change impact assessment and planning</li>
-      <li>Documentation and operational guidance</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= APPROACH ================= -->
-  <section>
-    <h2>How We Deliver Managed Services</h2>
-    <ol>
-      <li>
-        <strong>Assessment:</strong>
-        Understand existing infrastructure, risks, and operational gaps.
-      </li>
-      <li>
-        <strong>Baseline Definition:</strong>
-        Establish performance and stability benchmarks.
-      </li>
-      <li>
-        <strong>Monitoring:</strong>
-        Track system health and performance trends.
-      </li>
-      <li>
-        <strong>Optimization:</strong>
-        Recommend improvements to enhance reliability and efficiency.
-      </li>
-      <li>
-        <strong>Reporting & Guidance:</strong>
-        Provide clear insights and actionable recommendations.
-      </li>
-    </ol>
-  </section>
-
-  <hr>
-
-  <!-- ================= VALUE ================= -->
-  <section>
-    <h2>Value for Your Organization</h2>
-    <ul>
-      <li>Reduced downtime and operational risk</li>
-      <li>Improved system stability and performance</li>
-      <li>Better visibility into infrastructure health</li>
-      <li>Predictable operations and planning</li>
-      <li>Reduced pressure on internal IT teams</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= IDEAL CLIENTS ================= -->
-  <section>
-    <h2>Who This Service Is For</h2>
-    <ul>
-      <li>Organizations running critical IT infrastructure</li>
-      <li>Businesses without dedicated infrastructure teams</li>
-      <li>Companies seeking proactive IT management</li>
-      <li>Teams planning long-term infrastructure stability</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Maintain a Stable Infrastructure</h2>
-    <p>
-      If you want consistent performance, improved visibility,
-      and proactive infrastructure management, our managed services
-      can support your operations.
-    </p>
-    <a href="../contact.html">Talk to Our Managed Services Team</a>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../founder.html" class="nav-link">Founder</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Managed Services</h1>
+                    <p class="lead">Proactive monitoring, management, and optimization of your infrastructure with clear operational visibility, predictable performance, and reduced operational burden.</p>
+                    <div class="hero-cta">
+                        <a href="../contact.html" class="btn btn-primary">Discuss Managed Services</a>
+                        <a href="../services.html" class="btn btn-secondary">All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <h2>Strategic Context</h2>
+                        <p>Infrastructure management requires specialized skills, 24/7 attention, and continuous improvement—resources that are scarce and expensive to maintain internally. Reactive firefighting consumes IT resources and distracts from strategic initiatives.</p>
+                        <p>Effective managed services transform infrastructure from a cost center to a reliable, predictable platform that enables business innovation rather than constraining it.</p>
+                    </div>
+                    <div>
+                        <h2>Core Principles</h2>
+                        <ul class="principle-list">
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Proactive, Not Reactive:</strong> Prevent issues before they impact business through monitoring, automation, and predictive analytics.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Transparent Operations:</strong> Complete visibility into performance, health, and changes with clear reporting and communication.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Continuous Optimization:</strong> Regular review and improvement of configurations, performance, and costs as part of the service.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Aligned Incentives:</strong> Service level agreements that prioritize business outcomes, not just technical metrics.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-xl">
+                    <h3 class="text-center">Service Delivery Levels</h3>
+                    <div class="service-levels">
+                        <div class="service-level">
+                            <h4>Monitor</h4>
+                            <p>24/7 monitoring, alerting, and reporting with escalation to your internal team for resolution.</p>
+                        </div>
+                        <div class="service-level">
+                            <h4>Manage</h4>
+                            <p>Proactive management, routine maintenance, change implementation, and basic troubleshooting.</p>
+                        </div>
+                        <div class="service-level">
+                            <h4>Optimize</h4>
+                            <p>Continuous optimization, capacity planning, security hardening, and performance tuning.</p>
+                        </div>
+                        <div class="service-level">
+                            <h4>Transform</h4>
+                            <p>Strategic partnership including architecture review, technology refresh planning, and innovation advisory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section style="background-color: var(--color-primary-100);">
+            <div class="container">
+                <h2 class="text-center mb-xl">Capabilities & Solution Areas</h2>
+                
+                <div class="capability-grid">
+                    <div class="capability-card">
+                        <h3>Infrastructure Monitoring</h3>
+                        <p>Comprehensive monitoring of networks, servers, cloud resources, and applications with intelligent alerting and dashboards.</p>
+                        <ul class="text-small">
+                            <li>24/7/365 monitoring operations</li>
+                            <li>Performance and availability metrics</li>
+                            <li>Log aggregation and analysis</li>
+                            <li>Custom dashboard development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Network Operations</h3>
+                        <p>Day-to-day network management, configuration changes, performance optimization, and troubleshooting.</p>
+                        <ul class="text-small">
+                            <li>Network device configuration management</li>
+                            <li>Performance optimization and tuning</li>
+                            <li>Incident troubleshooting and resolution</li>
+                            <li>Change management and implementation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Cloud Operations</h3>
+                        <p>Management of cloud infrastructure, cost optimization, security compliance, and operational support.</p>
+                        <ul class="text-small">
+                            <li>Cloud resource provisioning and management</li>
+                            <li>Cost optimization and reserved instance management</li>
+                            <li>Security compliance monitoring</li>
+                            <li>Backup and disaster recovery management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Security Operations</h3>
+                        <p>Managed detection and response, vulnerability management, compliance monitoring, and security incident handling.</p>
+                        <ul class="text-small">
+                            <li>Threat detection and response</li>
+                            <li>Vulnerability scanning and remediation</li>
+                            <li>Security policy compliance monitoring</li>
+                            <li>Incident response coordination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Operating Model</h2>
+                    <p class="lead mb-xl">We provide structured, predictable service delivery through defined processes and clear accountability.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <h3>Service Design</h3>
+                        <p>Define service scope, SLAs, reporting requirements, and communication protocols tailored to your needs.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Transition</h3>
+                        <p>Knowledge transfer, tool integration, process alignment, and gradual assumption of operational responsibilities.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Delivery</h3>
+                        <p>Ongoing service delivery with regular service reviews, performance reporting, and continuous improvement.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Evolution</h3>
+                        <p>Regular service reviews, technology refresh planning, and strategic alignment with business objectives.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <a href="../contact.html" class="btn btn-primary">Request Managed Services Proposal</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="enterprise-networking.html">Enterprise Networking</a></li>
+                        <li><a href="cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a href="network-security.html">Network Security</a></li>
+                        <li><a href="managed-services.html" class="active">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../founder.html">Founder</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
