@@ -1,108 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/main.css">
-<script src="assets/js/main.js" defer></script>
-  <title>Contact Us | CoreLink Networks</title>
-  <meta name="description" content="Contact CoreLink Networks to discuss enterprise networking, cloud infrastructure, network security, or managed services requirements.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CoreLink Networks</title>
+    <meta name="description" content="Contact CoreLink Networks for enterprise infrastructure consulting and services.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contact-info {
+            padding: var(--space-lg);
+            background-color: var(--color-primary-100);
+            border-radius: var(--border-radius-lg);
+        }
+        
+        .contact-method {
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--color-neutral-300);
+        }
+        
+        .contact-method:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-accent-700);
+        }
+        
+        .form-group-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+        
+        .form-group-checkbox input {
+            margin-top: 4px;
+        }
+        
+        .form-group-checkbox label {
+            font-size: var(--fs-small);
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= PAGE HERO ================= -->
-  <header>
-    <h1>Contact CoreLink Networks</h1>
-    <p>
-      Let’s discuss your infrastructure requirements and
-      explore the right approach for your organization.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= INTRO ================= -->
-  <section>
-    <h2>Get in Touch</h2>
-    <p>
-      Whether you are planning a new IT infrastructure,
-      upgrading an existing environment, or seeking
-      long-term managed services, CoreLink Networks
-      is ready to help.
-    </p>
-    <p>
-      We believe in clear communication and structured
-      discussions — no pressure, no unnecessary sales talk.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= CONTACT METHOD ================= -->
-  <section>
-    <h2>How to Reach Us</h2>
-    <p>
-      You can reach out to us using the contact details below.
-      We aim to respond within a reasonable time frame with
-      clarity and next steps.
-    </p>
-
-    <ul>
-      <li><strong>Email:</strong> contact@corelinknetworks.com</li>
-      <li><strong>Location:</strong> India</li>
-    </ul>
-
-    <p>
-      (Email address is currently for initial communication.
-      Additional channels may be added as the company grows.)
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= WHAT TO EXPECT ================= -->
-  <section>
-    <h2>What to Expect After Contacting Us</h2>
-    <ol>
-      <li>Initial discussion to understand your requirement</li>
-      <li>High-level assessment of scope and challenges</li>
-      <li>Clear explanation of possible approaches</li>
-      <li>Next steps based on your priorities</li>
-    </ol>
-    <p>
-      We focus on understanding before recommending solutions.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= IDEAL INQUIRIES ================= -->
-  <section>
-    <h2>Ideal Inquiries</h2>
-    <ul>
-      <li>Enterprise networking design or upgrades</li>
-      <li>Cloud infrastructure planning or optimization</li>
-      <li>Network security architecture and guidance</li>
-      <li>Ongoing managed infrastructure services</li>
-      <li>Infrastructure assessment and documentation</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Start the Conversation</h2>
-    <p>
-      If you value a structured, security-aware, and
-      long-term approach to IT infrastructure,
-      CoreLink Networks would be glad to connect.
-    </p>
-    <p>
-      <strong>Email us at:</strong> contact@corelinknetworks.com
-    </p>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="founder.html" class="nav-link">Founder</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Contact CoreLink Networks</h1>
+                    <p class="lead">Begin a conversation about your enterprise infrastructure requirements. We respond to all inquiries within 24 hours.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2>Send a Message</h2>
+                        <p>Please provide details about your requirements so we can route your inquiry appropriately.</p>
+                        
+                        <form id="contact-form" class="mt-lg">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" id="company" name="company" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">Primary Interest</label>
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service area</option>
+                                    <option value="networking">Enterprise Networking</option>
+                                    <option value="cloud">Cloud Infrastructure</option>
+                                    <option value="security">Network Security</option>
+                                    <option value="managed">Managed Services</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="other">Other/General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Please describe your requirements, challenges, or specific questions..."></textarea>
+                            </div>
+                            
+                            <div class="form-group-checkbox">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">
+                                    I consent to CoreLink Networks contacting me regarding my inquiry. We respect your privacy and will not share your information with third parties.
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>For immediate assistance or specific inquiries, please use the following contact methods.</p>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p><strong>General Inquiries:</strong> <a href="mailto:info@corelinknetworks.com">info@corelinknetworks.com</a></p>
+                            <p><strong>Technical Discussions:</strong> <a href="mailto:solutions@corelinknetworks.com">solutions@corelinknetworks.com</a></p>
+                            <p class="text-small">We respond to all emails within 24 hours during business days.</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <h3>Phone</h3>
+                            <p><strong>Office:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                            <p class="text-small">Monday-Friday, 8:00 AM - 6:00 PM EST<br>
+                            After-hours emergency support available for existing clients.</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <h3>Location</h3>
+                            <p><strong>CoreLink Networks</strong><br>
+                            123 Enterprise Boulevard<br>
+                            Suite 500<br>
+                            San Francisco, CA 94107<br>
+                            United States</p>
+                            <p class="text-small">We serve clients nationally and internationally.</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">⏱️</div>
+                            <h3>Response Time</h3>
+                            <p><strong>Initial Response:</strong> Within 24 hours</p>
+                            <p><strong>Technical Proposal:</strong> 3-5 business days after requirements discussion</p>
+                            <p><strong>Emergency Contact:</strong> Existing clients receive 24/7 support through dedicated channels.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Information -->
+                <div class="mt-xl">
+                    <h2 class="text-center">What to Expect</h2>
+                    <div class="grid grid-4 mt-lg">
+                        <div class="text-center">
+                            <div class="card-icon">1</div>
+                            <h4>Initial Contact</h4>
+                            <p class="text-small">We'll acknowledge your inquiry within 24 hours and schedule a brief discovery call.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">2</div>
+                            <h4>Requirements Discussion</h4>
+                            <p class="text-small">A technical consultant will discuss your specific challenges, environment, and objectives.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">3</div>
+                            <h4>Proposal Development</h4>
+                            <p class="text-small">We'll develop a tailored proposal with scope, approach, timeline, and investment.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="card-icon">4</div>
+                            <h4>Solution Design</h4>
+                            <p class="text-small">For qualified opportunities, we'll proceed to detailed architecture and implementation planning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services/enterprise-networking.html">Enterprise Networking</a></li>
+                        <li><a href="services/cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a href="services/network-security.html">Network Security</a></li>
+                        <li><a href="services/managed-services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founder.html">Founder</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
