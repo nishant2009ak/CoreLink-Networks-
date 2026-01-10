@@ -82,47 +82,86 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Form submission handling (for contact page)
+  // Formspree form submission with better UX
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Basic form validation
-      const requiredFields = this.querySelectorAll('[required]');
-      let isValid = true;
-      
-      requiredFields.forEach(field => {
-        if (!field.value.trim()) {
-          isValid = false;
-          field.style.borderColor = 'var(--color-error)';
-        } else {
-          field.style.borderColor = '';
-        }
+      contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formStatus = document.getElementById('form-status');
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+          
+          // Basic validation
+          const requiredFields = this.querySelectorAll('[required]');
+          let isValid = true;
+          
+          requiredFields.forEach(field => {
+              if (!field.value.trim()) {
+                  isValid = false;
+                  field.style.borderColor = 'var(--color-error)';
+              } else {
+                  field.style.borderColor = '';
+              }
+          });
+          
+          if (!isValid) {
+              formStatus.textContent = 'Please fill in all required fields.';
+              formStatus.style.backgroundColor = 'var(--color-error)';
+              formStatus.style.color = 'white';
+              formStatus.style.display = 'block';
+              return;
+          }
+          
+          // Show loading state
+          submitBtn.textContent = 'Sending...';
+          submitBtn.disabled = true;
+          formStatus.style.display = 'none';
+          
+          try {
+              // Send to Formspree
+              const formData = new FormData(this);
+              const response = await fetch(this.action, {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                      'Accept': 'application/json'
+                  }
+              });
+              
+              if (response.ok) {
+                  // Success
+                  formStatus.textContent = 'Thank you for your message. We will respond within 24 hours.';
+                  formStatus.style.backgroundColor = 'var(--color-success)';
+                  formStatus.style.color = 'white';
+                  formStatus.style.display = 'block';
+                  this.reset();
+              } else {
+                  throw new Error('Form submission failed');
+              }
+          } catch (error) {
+              // Error
+              formStatus.textContent = 'There was an error sending your message. Please try again or email us directly.';
+              formStatus.style.backgroundColor = 'var(--color-error)';
+              formStatus.style.color = 'white';
+              formStatus.style.display = 'block';
+          } finally {
+              // Reset button
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+          }
       });
-      
-      if (!isValid) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-      
-      // In a real implementation, you would send data to a server here
-      // For now, we'll just show a success message
-      const submitBtn = this.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
-      
-      // Simulate API call
-      setTimeout(() => {
-        alert('Thank you for your message. Our team will respond within 24 hours.');
-        contactForm.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      }, 1500);
-    });
   }
+  
+  // Real-time form validation
+  const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea, #contact-form select');
+  formInputs.forEach(input => {
+    input.addEventListener('input', function() {
+      if (this.value.trim()) {
+        this.style.borderColor = '';
+      }
+    });
+  });
   
   // Initialize any other components here as needed
   console.log('CoreLink Networks website initialized.');
