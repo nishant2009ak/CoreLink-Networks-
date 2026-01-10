@@ -166,3 +166,40 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize any other components here as needed
   console.log('CoreLink Networks website initialized.');
 });
+// Professional Scroll Effects
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+    
+    // Parallax effects
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+        hero.style.transform = `translate3d(0px, ${rate}px, 0px)`;
+    }
+});
+
+// Intersection Observer for fade-in animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe all cards and sections
+document.querySelectorAll('.card, section').forEach(el => {
+    observer.observe(el);
+});
