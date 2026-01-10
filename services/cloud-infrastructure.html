@@ -1,146 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cloud Infrastructure | CoreLink Networks</title>
-<link rel="stylesheet" href="../assets/css/main.css">
-<script src="../assets/js/main.js" defer></script>
-  <meta name="description" content="Cloud infrastructure solutions designed for scalability, security, performance, and cost control across enterprise environments.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Infrastructure | CoreLink Networks</title>
+    <meta name="description" content="Structured cloud adoption, migration, and optimization with governance and operational excellence.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <style>
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .capability-card {
+            padding: var(--space-lg);
+            border-left: 4px solid var(--color-accent-700);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+        }
+        
+        .principle-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .principle-list li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-neutral-300);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        
+        .principle-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .principle-icon {
+            color: var(--color-accent-700);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= HERO ================= -->
-  <header>
-    <h1>Cloud Infrastructure</h1>
-    <p>
-      Scalable, secure, and well-architected cloud infrastructure
-      designed to support modern workloads and long-term business growth.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= INTRODUCTION ================= -->
-  <section>
-    <h2>Overview</h2>
-    <p>
-      Cloud infrastructure enables organizations to scale faster,
-      improve availability, and modernize application environments.
-      However, unplanned or poorly designed cloud adoption often results
-      in high costs, security gaps, and operational complexity.
-    </p>
-    <p>
-      CoreLink Networks helps organizations design cloud and hybrid
-      infrastructure with structure, control, and long-term sustainability
-      in mind.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= BUSINESS PROBLEMS ================= -->
-  <section>
-    <h2>Challenges Organizations Face</h2>
-    <ul>
-      <li>Unclear cloud migration strategy</li>
-      <li>Uncontrolled or unpredictable cloud costs</li>
-      <li>Security and compliance concerns</li>
-      <li>Performance issues with cloud-based workloads</li>
-      <li>Poor integration between on-premise and cloud systems</li>
-      <li>Lack of documentation and operational visibility</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= OUR SOLUTION ================= -->
-  <section>
-    <h2>Our Cloud Infrastructure Solutions</h2>
-    <p>
-      We design cloud infrastructure solutions that balance flexibility,
-      performance, security, and cost efficiency.
-    </p>
-    <ul>
-      <li>Cloud readiness assessment and planning</li>
-      <li>Public, private, and hybrid cloud architecture design</li>
-      <li>Workload placement and capacity planning</li>
-      <li>Network connectivity and cloud integration</li>
-      <li>Identity, access, and security design</li>
-      <li>Cost optimization and resource governance</li>
-      <li>Clear architecture documentation</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= HOW WE WORK ================= -->
-  <section>
-    <h2>How We Work</h2>
-    <ol>
-      <li>
-        <strong>Assessment:</strong>
-        Evaluate existing infrastructure, applications, and goals.
-      </li>
-      <li>
-        <strong>Architecture Design:</strong>
-        Define a scalable, secure, and cost-aware cloud model.
-      </li>
-      <li>
-        <strong>Implementation:</strong>
-        Deploy cloud resources with minimal operational disruption.
-      </li>
-      <li>
-        <strong>Optimization:</strong>
-        Improve performance, availability, and cost efficiency.
-      </li>
-      <li>
-        <strong>Documentation:</strong>
-        Provide clear diagrams and operational guidance.
-      </li>
-    </ol>
-  </section>
-
-  <hr>
-
-  <!-- ================= WHY CORELINK ================= -->
-  <section>
-    <h2>Why CoreLink Networks</h2>
-    <ul>
-      <li>Business-driven cloud design</li>
-      <li>Security integrated at architecture level</li>
-      <li>Cost-conscious and scalable solutions</li>
-      <li>Vendor-neutral recommendations</li>
-      <li>Clear documentation and transparency</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= IDEAL USE CASES ================= -->
-  <section>
-    <h2>Who This Service Is For</h2>
-    <ul>
-      <li>Organizations planning cloud adoption</li>
-      <li>Businesses building hybrid environments</li>
-      <li>Companies modernizing legacy infrastructure</li>
-      <li>Teams requiring scalable and reliable platforms</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Build a Scalable Cloud Foundation</h2>
-    <p>
-      If your organization is planning to adopt or optimize
-      cloud infrastructure, CoreLink Networks can help you
-      design a secure and future-ready cloud environment.
-    </p>
-    <a href="../contact.html">Discuss Your Cloud Requirements</a>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../founder.html" class="nav-link">Founder</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Cloud Infrastructure</h1>
+                    <p class="lead">Structured cloud adoption, migration, and optimization with a focus on governance, cost management, and operational excellence across hybrid and multi-cloud environments.</p>
+                    <div class="hero-cta">
+                        <a href="../contact.html" class="btn btn-primary">Discuss Cloud Strategy</a>
+                        <a href="../services.html" class="btn btn-secondary">All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <h2>Strategic Context</h2>
+                        <p>Cloud adoption is no longer a question of "if" but "how well." Unstructured cloud expansion leads to security gaps, cost overruns, and operational complexity that can negate the promised benefits of agility and scale.</p>
+                        <p>Successful cloud infrastructure requires deliberate architecture, consistent governance, and operational models that bridge traditional IT and cloud-native paradigms.</p>
+                    </div>
+                    <div>
+                        <h2>Core Principles</h2>
+                        <ul class="principle-list">
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Governance-First:</strong> Establish guardrails, policies, and financial controls before significant workload deployment.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Platform Mindset:</strong> Build reusable, standardized cloud platforms rather than one-off project deployments.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Cost Transparency:</strong> Implement clear chargeback/showback models and proactive cost optimization as a continuous discipline.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Operational Consistency:</strong> Apply consistent operational practices across hybrid environments, leveraging infrastructure as code and automated pipelines.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section style="background-color: var(--color-primary-100);">
+            <div class="container">
+                <h2 class="text-center mb-xl">Capabilities & Solution Areas</h2>
+                
+                <div class="capability-grid">
+                    <div class="capability-card">
+                        <h3>Cloud Strategy & Governance</h3>
+                        <p>Cloud operating model design, organizational readiness, policy framework development, and multi-cloud governance structures.</p>
+                        <ul class="text-small">
+                            <li>Cloud Center of Excellence establishment</li>
+                            <li>Policy as Code implementation</li>
+                            <li>Multi-cloud governance frameworks</li>
+                            <li>Vendor management strategy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Migration & Modernization</h3>
+                        <p>Application assessment, migration planning, and execution using structured methodologies (6Rs) with minimal business disruption.</p>
+                        <ul class="text-small">
+                            <li>Application portfolio analysis</li>
+                            <li>Lift-and-shift vs. refactor decisions</li>
+                            <li>Data migration planning</li>
+                            <li>Cutover and rollback procedures</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Cloud Platform Engineering</h3>
+                        <p>Design and implementation of landing zones, identity/access management, networking, and core service catalogs.</p>
+                        <ul class="text-small">
+                            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+                            <li>Identity and access management design</li>
+                            <li>Hybrid connectivity architecture</li>
+                            <li>Service catalog development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>FinOps & Optimization</h3>
+                        <p>Cost management framework implementation, resource optimization, reservation planning, and continuous improvement cycles.</p>
+                        <ul class="text-small">
+                            <li>Cost allocation and chargeback models</li>
+                            <li>Resource right-sizing recommendations</li>
+                            <li>Reserved instance planning</li>
+                            <li>Anomaly detection and alerting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Approach</h2>
+                    <p class="lead mb-xl">We follow the Cloud Adoption Framework principles with pragmatic adaptation to your organizational maturity.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <h3>Strategy Definition</h3>
+                        <p>Business case development, cloud operating model design, and organizational readiness assessment.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Plan & Prepare</h3>
+                        <p>Landing zone design, governance policies, security baseline, and migration wave planning.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Migrate & Modernize</h3>
+                        <p>Application migration execution, platform engineering, and operational process integration.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Govern & Optimize</h3>
+                        <p>Ongoing governance, cost optimization, performance tuning, and platform evolution.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <a href="../contact.html" class="btn btn-primary">Schedule Cloud Assessment</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="enterprise-networking.html">Enterprise Networking</a></li>
+                        <li><a href="cloud-infrastructure.html" class="active">Cloud Infrastructure</a></li>
+                        <li><a href="network-security.html">Network Security</a></li>
+                        <li><a href="managed-services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../founder.html">Founder</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
