@@ -1,146 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Network Security | CoreLink Networks</title>
-<link rel="stylesheet" href="../assets/css/main.css">
-<script src="../assets/js/main.js" defer></script>
-  <meta name="description" content="Enterprise network security solutions focused on risk reduction, visibility, access control, and long-term infrastructure protection.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security | CoreLink Networks</title>
+    <meta name="description" content="Zero-trust architecture, comprehensive threat management, and security integration across enterprise environments.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <style>
+        .capability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .capability-card {
+            padding: var(--space-lg);
+            border-left: 4px solid var(--color-accent-700);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+        }
+        
+        .principle-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .principle-list li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-neutral-300);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+        
+        .principle-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .principle-icon {
+            color: var(--color-accent-700);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .security-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        
+        .pillar {
+            text-align: center;
+            padding: var(--space-lg);
+            background-color: var(--color-neutral-0);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-neutral-300);
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ================= HERO ================= -->
-  <header>
-    <h1>Network Security</h1>
-    <p>
-      Security-first network architectures designed to protect
-      critical systems, data, and business operations.
-    </p>
-  </header>
-
-  <hr>
-
-  <!-- ================= INTRODUCTION ================= -->
-  <section>
-    <h2>Overview</h2>
-    <p>
-      Network security is a foundational requirement for any organization
-      operating in a connected environment. As infrastructure grows,
-      poorly secured networks increase exposure to unauthorized access,
-      data leakage, and operational disruption.
-    </p>
-    <p>
-      CoreLink Networks integrates security directly into network design,
-      ensuring protection, visibility, and control without unnecessary
-      complexity.
-    </p>
-  </section>
-
-  <hr>
-
-  <!-- ================= BUSINESS RISKS ================= -->
-  <section>
-    <h2>Security Challenges Organizations Face</h2>
-    <ul>
-      <li>Unauthorized access to internal systems</li>
-      <li>Flat networks with no segmentation</li>
-      <li>Misconfigured firewalls and access policies</li>
-      <li>Lack of visibility into network traffic</li>
-      <li>Outdated security practices and documentation gaps</li>
-      <li>Increased attack surface due to cloud and remote access</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= OUR SOLUTION ================= -->
-  <section>
-    <h2>Our Network Security Solutions</h2>
-    <p>
-      We design security-focused network architectures that prioritize
-      prevention, detection, and control.
-    </p>
-    <ul>
-      <li>Security-aware network architecture and segmentation</li>
-      <li>Firewall planning and policy design</li>
-      <li>Access control and network isolation strategies</li>
-      <li>Secure remote access and connectivity planning</li>
-      <li>Traffic monitoring and security visibility</li>
-      <li>Risk reduction through structured design</li>
-      <li>Clear security documentation and guidance</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= HOW WE WORK ================= -->
-  <section>
-    <h2>How We Work</h2>
-    <ol>
-      <li>
-        <strong>Risk Assessment:</strong>
-        Identify exposure points, access paths, and security gaps.
-      </li>
-      <li>
-        <strong>Security Design:</strong>
-        Design layered security controls aligned with business needs.
-      </li>
-      <li>
-        <strong>Implementation:</strong>
-        Apply security measures with minimal operational impact.
-      </li>
-      <li>
-        <strong>Validation:</strong>
-        Verify access policies, segmentation, and configurations.
-      </li>
-      <li>
-        <strong>Documentation:</strong>
-        Deliver clear security architecture and operational guidance.
-      </li>
-    </ol>
-  </section>
-
-  <hr>
-
-  <!-- ================= WHY CORELINK ================= -->
-  <section>
-    <h2>Why CoreLink Networks</h2>
-    <ul>
-      <li>Security integrated at architecture level</li>
-      <li>Risk-focused, not fear-driven approach</li>
-      <li>Clear access control and visibility</li>
-      <li>Vendor-neutral security planning</li>
-      <li>Long-term protection and scalability</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= IDEAL USE CASES ================= -->
-  <section>
-    <h2>Who This Service Is For</h2>
-    <ul>
-      <li>Organizations handling sensitive or regulated data</li>
-      <li>Businesses improving overall security posture</li>
-      <li>Companies upgrading legacy or flat networks</li>
-      <li>Teams requiring structured security planning</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ================= CTA ================= -->
-  <section>
-    <h2>Secure Your Network Infrastructure</h2>
-    <p>
-      If your organization requires a security-first approach
-      to network design and protection, CoreLink Networks can
-      help you reduce risk and improve visibility.
-    </p>
-    <a href="../contact.html">Discuss Network Security Requirements</a>
-  </section>
-
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">CoreLink Networks</a>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services.html" class="nav-link">Services</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../founder.html" class="nav-link">Founder</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <section class="hero section-sm">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Network Security</h1>
+                    <p class="lead">Zero-trust architecture, comprehensive threat management, and security integration across on-premises, cloud, and hybrid enterprise environments.</p>
+                    <div class="hero-cta">
+                        <a href="../contact.html" class="btn btn-primary">Security Assessment</a>
+                        <a href="../services.html" class="btn btn-secondary">All Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <h2>Strategic Context</h2>
+                        <p>The traditional perimeter-based security model is obsolete. With cloud adoption, remote work, and sophisticated threats, security must be intrinsic to architecture—applied consistently regardless of location, device, or network.</p>
+                        <p>Effective security requires a balanced approach: strong preventative controls, comprehensive detection capabilities, and efficient response processes.</p>
+                    </div>
+                    <div>
+                        <h2>Core Principles</h2>
+                        <ul class="principle-list">
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Zero Trust Foundation:</strong> Assume breach, verify explicitly, and grant least-privilege access based on identity and context.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Defense in Depth:</strong> Layered security controls that provide redundancy and protection against single points of failure.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Security by Design:</strong> Security requirements are integrated from the initial architecture phase, not added as an afterthought.
+                                </div>
+                            </li>
+                            <li>
+                                <span class="principle-icon">→</span>
+                                <div>
+                                    <strong>Continuous Monitoring:</strong> Real-time visibility, threat detection, and automated response across all environments and assets.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-xl">
+                    <h3 class="text-center">Security Pillars</h3>
+                    <div class="security-pillars">
+                        <div class="pillar">
+                            <h4>Prevent</h4>
+                            <p>Strong access controls, segmentation, encryption, and hardening to reduce attack surface and prevent incidents.</p>
+                        </div>
+                        <div class="pillar">
+                            <h4>Detect</h4>
+                            <p>Continuous monitoring, anomaly detection, and threat intelligence to identify breaches early.</p>
+                        </div>
+                        <div class="pillar">
+                            <h4>Respond</h4>
+                            <p>Incident response planning, automated containment, and forensic capabilities to limit damage.</p>
+                        </div>
+                        <div class="pillar">
+                            <h4>Recover</h4>
+                            <p>Business continuity planning, backup strategies, and resilience testing for rapid restoration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section style="background-color: var(--color-primary-100);">
+            <div class="container">
+                <h2 class="text-center mb-xl">Capabilities & Solution Areas</h2>
+                
+                <div class="capability-grid">
+                    <div class="capability-card">
+                        <h3>Zero Trust Architecture</h3>
+                        <p>Identity-centric security model with micro-segmentation, continuous authentication, and least-privilege access across all environments.</p>
+                        <ul class="text-small">
+                            <li>Identity and access management design</li>
+                            <li>Software-defined perimeter implementation</li>
+                            <li>Network micro-segmentation</li>
+                            <li>Conditional access policies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Network Security Controls</h3>
+                        <p>Next-generation firewalls, intrusion prevention, web application protection, and secure web gateway implementation.</p>
+                        <ul class="text-small">
+                            <li>Unified threat management</li>
+                            <li>Application-aware policy enforcement</li>
+                            <li>SSL/TLS inspection</li>
+                            <li>Threat intelligence integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Cloud Security Posture</h3>
+                        <p>Cloud security architecture, configuration compliance, data protection, and identity management across IaaS, PaaS, and SaaS.</p>
+                        <ul class="text-small">
+                            <li>Cloud security posture management</li>
+                            <li>Infrastructure as Code security scanning</li>
+                            <li>Cloud data loss prevention</li>
+                            <li>Container and serverless security</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="capability-card">
+                        <h3>Security Operations</h3>
+                        <p>Security monitoring, incident response, threat hunting, and security automation (SOAR) to improve detection and response capabilities.</p>
+                        <ul class="text-small">
+                            <li>SIEM architecture and optimization</li>
+                            <li>Threat detection rule development</li>
+                            <li>Incident response planning</li>
+                            <li>Security automation workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Approach</h2>
+                    <p class="lead mb-xl">We follow a risk-based methodology that aligns security investments with business priorities and threat landscape.</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="text-center">
+                        <h3>Assess</h3>
+                        <p>Current state assessment, risk analysis, compliance gap analysis, and maturity evaluation.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Architect</h3>
+                        <p>Security architecture design, control selection, integration planning, and roadmap development.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Implement</h3>
+                        <p>Phased implementation, policy configuration, integration testing, and documentation.</p>
+                    </div>
+                    <div class="text-center">
+                        <h3>Operate</h3>
+                        <p>Monitoring configuration, incident response procedures, ongoing tuning, and compliance reporting.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-xl">
+                    <a href="../contact.html" class="btn btn-primary">Request Security Review</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="../index.html" class="footer-logo">CoreLink Networks</a>
+                    <p>Enterprise infrastructure, unified. We provide the foundational capabilities that modern businesses run on.</p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="enterprise-networking.html">Enterprise Networking</a></li>
+                        <li><a href="cloud-infrastructure.html">Cloud Infrastructure</a></li>
+                        <li><a href="network-security.html" class="active">Network Security</a></li>
+                        <li><a href="managed-services.html">Managed Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../founder.html">Founder</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> CoreLink Networks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
